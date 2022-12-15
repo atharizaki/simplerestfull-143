@@ -6,7 +6,9 @@ package pws.c.project4.project4;
 
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -29,11 +31,17 @@ public class ProductServiceController {
       Product honey = new Product();
       honey.setId("1");
       honey.setName("Honey");
+      honey.setQty("Qty");
+      honey.setPrice("price");
+      
+        
       productRepo.put(honey.getId(), honey);
       
       Product almond = new Product();
       almond.setId("2");
       almond.setName("Almond");
+      almond.setQty("Qty");
+      almond.setPrice("price");
       productRepo.put(almond.getId(), almond);
    }
    
