@@ -8,7 +8,6 @@ package pws.c.project4.project4;
  *
  * @author athar
  */
-public class Product {
+public class ProductServiceController {
     
 }
-
