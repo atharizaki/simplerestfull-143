@@ -62,7 +62,8 @@ public class ProductServiceController {
    //Method PUT
    @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
    public ResponseEntity<Object> updateProduct(@PathVariable("id") String id, @RequestBody Product product) { 
-      
+       //kondisi jika Id produk yang ingin diupdate tidak ada
+      if(!productRepo.containsKey(id))throw new ProductNotFoundException();
       productRepo.remove(id);
       product.setId(id);
       productRepo.put(id, product);
