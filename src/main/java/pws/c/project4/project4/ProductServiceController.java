@@ -28,7 +28,8 @@ public class ProductServiceController {
       Product honey = new Product();
       honey.setId("1");
       honey.setName("Honey");
-      
+      honey.setQty("1");
+      honey.setPrice("1000");
       
         
       productRepo.put(honey.getId(), honey);
@@ -37,7 +38,9 @@ public class ProductServiceController {
       Product almond = new Product();
       almond.setId("2");
       almond.setName("Almond");
-      
+      almond.setQty("2");
+      almond.setPrice("2000");
+      productRepo.put(almond.getId(), almond);
    }
     
     //Method GET

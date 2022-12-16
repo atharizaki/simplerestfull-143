@@ -11,6 +11,8 @@ package pws.c.project4.project4;
 public class Product {
     private String id;
     private String name;
+    private String Qty;
+    private String price;
     
     
     //mengambil id, nama dari Product service Controller
@@ -29,5 +31,23 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getQty() {
+        return Qty;
+    }
+
+    public void setQty(String Qty) {
+        this.Qty = Qty;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+    
+    
 
 }
