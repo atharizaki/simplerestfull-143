@@ -9,6 +9,25 @@ package pws.c.project4.project4;
  * @author athar
  */
 public class Product {
+    private String id;
+    private String name;
     
-}
+    
+    //mengambil id, nama dari Product service Controller
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+}
